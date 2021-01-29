@@ -32,11 +32,19 @@ const ListItem = (props) => {
                 >
                   DELETE
                 </Button>
+
                 <br />
                 <div className="mt-3">
                   <h6>Time:{task.datetime}</h6>
                   <h6>Created :{task.date}</h6>
                 </div>
+                <Button
+                  className="btn btn-sm"
+                  variant="outline-success"
+                  // onClick={() => props.onDeleteClick(task.id)}
+                >
+                  Compeleted
+                </Button>
               </div>
             </div>
           </Card.Title>
